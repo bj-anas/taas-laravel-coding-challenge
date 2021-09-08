@@ -2061,11 +2061,15 @@ module.exports = {
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // hamberger menu
-// hamberger menu
 
 
 document.getElementById("toggle-button").onclick = function () {
   document.getElementById("navbar-links").classList.toggle("hidden");
+}; // main menu links
+
+
+document.getElementById("menu-button").onclick = function () {
+  document.getElementById("menu-links").classList.toggle("hidden");
 };
 
 /***/ }),

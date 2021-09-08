@@ -48,3 +48,66 @@ header {
 #span-hover {
   @apply border-gray-700;
 }
+
+/*------- Main page -------*/
+.main-list-style {
+  @apply flex flex-nowrap w-full text-sm space-x-3 sm:text-base sm:space-x-4 md:space-x-6 lg:space-x-10 text-gray-500;
+}
+.style-span {
+  @apply bg-gray-100 rounded-full px-3 ml-1 text-gray-700;
+}
+
+#menu-button {
+  @apply tl:hidden;
+}
+
+#menu-links {
+  @apply tl:hidden;
+}
+
+.arrowBox:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #dcdde1;
+  border-left: 1px solid #dcdde1;
+  border-bottom: 0px solid #dcdde1;
+  border-right: 0px solid #dcdde1;
+  position: absolute;
+  left: 80%;
+  top: 0%;
+  margin-top: -5px;
+  background: white;
+  transform: rotate(45deg);
+}
+
+:hover.main-page-menu {
+  @apply text-purple-600 border-b-2 border-purple-600 pb-4;
+}
+
+/* ------------Section Users---------------*/
+.users {
+  @apply block py-6 border-b border-gray-200 hover:bg-gray-50 tl:flex tl:justify-between tl:items-center;
+}
+
+.first-column {
+  @apply w-60 mx-auto space-y-2 ts:flex ts:items-center ts:space-y-0 ts:w-80 tl:mx-0;
+}
+
+.first-column div {
+  @apply space-y-2 ts:pl-4;
+}
+.first-column div span:first-child {
+  @apply text-purple-700;
+}
+.first-column div span:last-child {
+  @apply text-gray-600;
+}
+
+.second-column {
+  @apply w-60 mx-auto mt-4 space-y-2 ts:pl-6 ts:w-max tl:mt-0 tl:pt-2 tl:pl-0 tl:mx-0;
+}
+
+.third-column {
+  @apply text-gray-600 hidden sm:block;
+}
