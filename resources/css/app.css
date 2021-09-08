@@ -111,3 +111,11 @@ header {
 .third-column {
   @apply text-gray-600 hidden sm:block;
 }
+
+/* ------------Footer---------------*/
+.number {
+  @apply sm:space-x-0 sm:px-2 md:px-4 lg:px-4;
+}
+:hover.number {
+  @apply text-purple-600 border-t-2 border-purple-600 pt-4;
+}
