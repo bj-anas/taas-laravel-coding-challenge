@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* ------Header first part----*/
+header {
+  background-color: #f9fafc;
+}
+
+#navbar-links ul li {
+  @apply py-1 border-b-2 border-gray-200;
+}
+
+#navbar-links ul li a {
+  @apply font-bold;
+}
+
+/*-----Header second part------ */
+
+.header-data-info {
+  @apply flex flex-col tl:flex-wrap tl:flex-row tl:gap-2 md:space-x-2 xl:space-x-4 mb-4 text-gray-500 mt-2 text-sm xl:text-base;
+}
+
+/*------ tirple header buttons -----*/
+.triple-buttons {
+  @apply flex justify-start gap-2 tm:flex tm:flex-nowrap tm:justify-end sm:gap-3 flex-wrap;
+}
+.button-edit,
+.button-view {
+  @apply tm:flex-none sm:flex-none items-center hover:bg-white px-2 py-1 h-10 bg-gray-100 border-2 border-gray-300 rounded-md;
+}
+
+.published-button {
+  background-color: #8056df;
+  @media only screen and (min-width: 360px) and (max-width: $s-small) {
+    @apply w-max;
+  }
+}
+:hover.published-button {
+  @apply bg-purple-600;
+}
+
+#span-hover {
+  @apply border-gray-700;
+}
